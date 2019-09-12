@@ -1,110 +1,110 @@
 export const data = [
   {
-    "fileName": "1.jpeg",
+    "fileName": "1.jpg",
     "title": "Heaven of time",
     "desc": "Here he comes Here comes Speed Racer."
   },
   {
-    "fileName": "2.jpeg",
+    "fileName": "2.jpg",
     "title": "Heaven of time",
     "desc": "Here he comes Here comes Speed Racer."
   },
   {
-    "fileName": "3.jpeg",
+    "fileName": "3.jpg",
     "title": "Heaven of time",
     "desc": "Here he comes Here comes Speed Racer."
   },
   {
-    "fileName": "4.jpeg",
+    "fileName": "4.jpg",
     "title": "Heaven of time",
     "desc": "Here he comes Here comes Speed Racer."
   },
   {
-    "fileName": "5.jpeg",
+    "fileName": "5.jpg",
     "title": "Heaven of time",
     "desc": "Here he comes Here comes Speed Racer."
   },
   {
-    "fileName": "6.jpeg",
+    "fileName": "6.jpg",
     "title": "Heaven of time",
     "desc": "Here he comes Here comes Speed Racer."
   },
   {
-    "fileName": "7.jpeg",
+    "fileName": "7.jpg",
     "title": "Heaven of time",
     "desc": "Here he comes Here comes Speed Racer."
   },
   {
-    "fileName": "8.jpeg",
+    "fileName": "8.jpg",
     "title": "Heaven of time",
     "desc": "Here he comes Here comes Speed Racer."
   },
   {
-    "fileName": "9.jpeg",
+    "fileName": "9.jpg",
     "title": "Heaven of time",
     "desc": "Here he comes Here comes Speed Racer."
   },
   {
-    "fileName": "10.jpeg",
+    "fileName": "10.jpg",
     "title": "Heaven of time",
     "desc": "Here he comes Here comes Speed Racer."
   },
   {
-    "fileName": "11.jpeg",
+    "fileName": "11.jpg",
     "title": "Heaven of time",
     "desc": "Here he comes Here comes Speed Racer."
   },
   {
-    "fileName": "12.jpeg",
+    "fileName": "12.jpg",
     "title": "Heaven of time",
     "desc": "Here he comes Here comes Speed Racer."
   },
   {
-    "fileName": "13.jpeg",
+    "fileName": "13.jpg",
     "title": "Heaven of time",
     "desc": "Here he comes Here comes Speed Racer."
   },
   {
-    "fileName": "14.jpeg",
+    "fileName": "14.jpg",
     "title": "Heaven of time",
     "desc": "Here he comes Here comes Speed Racer."
   },
   {
-    "fileName": "15.jpeg",
+    "fileName": "15.jpg",
     "title": "Heaven of time",
     "desc": "Here he comes Here comes Speed Racer."
   },
   {
-    "fileName": "16.jpeg",
+    "fileName": "16.jpg",
     "title": "Heaven of time",
     "desc": "Here he comes Here comes Speed Racer."
   },
   {
-    "fileName": "17.jpeg",
+    "fileName": "17.jpg",
     "title": "Heaven of time",
     "desc": "Here he comes Here comes Speed Racer."
   },
   {
-    "fileName": "18.jpeg",
+    "fileName": "18.jpg",
     "title": "Heaven of time",
     "desc": "Here he comes Here comes Speed Racer."
   },{
-    "fileName": "19.jpeg",
+    "fileName": "19.jpg",
     "title": "Heaven of time",
     "desc": "Here he comes Here comes Speed Racer."
   },
   {
-    "fileName": "20.jpeg",
+    "fileName": "20.jpg",
     "title": "Heaven of time",
     "desc": "Here he comes Here comes Speed Racer."
   },
   {
-    "fileName": "21.jpeg",
+    "fileName": "21.jpg",
     "title": "Heaven of time",
     "desc": "Here he comes Here comes Speed Racer."
   },
   {
-    "fileName": "22.jpeg",
+    "fileName": "22.jpg",
     "title": "Heaven of time",
     "desc": "Here he comes Here comes Speed Racer."
   }
