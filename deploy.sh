@@ -15,6 +15,6 @@ git add -A
 git commit -m 'chore: deploy'
 
 # 提交到项目的 gh-pages 分支
-git push -f https://github.com/iuiaoin/photo-wall.git master:gh-pages
+git push -f https://github.com/iuiaoin/iceice.git master:gh-pages
 
 cd -
