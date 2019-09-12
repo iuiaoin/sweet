@@ -1,6 +1,6 @@
 <template>
   <section class="stage" ref="stage">
-    <section class="img-sec">
+    <section class="img-sec" :class="perspective">
       <img-figure v-for="(item, index) in imgData" :key="`imgFigure${index}`" ref="imgFigure" :data="item" :arrange="imgsArrangeArr[index]" @inverse="inverse(index)" @center="center(index)" />
     </section>
     <nav class="controller-nav">
@@ -13,7 +13,7 @@
   import { data } from '../constants/data';
   import imgFigure from './img-figure.vue';
   import controllerUnit from './controller-unit.vue';
-  import { getRangeRandom, get30DegRandom } from '../util';
+  import { getRangeRandom, get30DegRandom, isPC } from '../util';
   export default {
     data() {
       return {
@@ -38,7 +38,8 @@
         imgData: data.map(img => {
           img.imgURL = require('../assets/imgs/' + img.fileName);
           return img;
-        })
+        }),
+        perspective: ''
       }
     },
     components: {
@@ -47,6 +48,7 @@
     },
     created() {
       this.initPos();
+      this.perspective = isPC() ? 'perspective' : '';
     },
     mounted() {
       this.initRange();
@@ -139,8 +141,8 @@
         });
 
         //布局左右两侧的图片
-        for (var i = 0, j = imgsArrangeArr.length, k = j / 2; i < j; i++) {
-          var hPosRangeLORX = null;
+        for (let i = 0, j = imgsArrangeArr.length, k = j / 2; i < j; i++) {
+          let hPosRangeLORX = null;
 
           // 前半部分布局左边, 右半部分布局右边
           if (i < k) {
@@ -194,6 +196,11 @@
   }
 
   /* Base Application Styles */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
   html,
   body {
     width: 100%;
@@ -211,11 +218,10 @@
     position: relative;
 
     width: 100%;
-    height: 676px;
+    height: 100%;
   }
 
   /* stage -- end */
-
 
   /* image -- start */
   .img-sec {
@@ -224,9 +230,12 @@
     height: 100%;
     overflow: hidden;
     background-color: #ddd;
+  }
 
-    //景深
+  //景深
+  .perspective {
     perspective: 1800px;
+    -webkit-perspective: 1800px;
   }
 
   /* image -- end */

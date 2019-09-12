@@ -11,7 +11,9 @@
 </template>
 
 <script>
+  import mixin from '../mixins/index';
   export default {
+    mixins: [ mixin ],
     props: {
       arrange: Object,
       data: Object
@@ -35,17 +37,6 @@
         }
         if(isCenter) obj.zIndex = 11;
         return obj;
-      }
-    },
-    methods: {
-      handleClick(e) {
-        e.stopPropagation();
-        e.preventDefault();
-        if (this.arrange.isCenter) {
-          this.$emit('inverse');
-        } else {
-          this.$emit('center');
-        }
       }
     }
   }

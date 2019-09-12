@@ -3,7 +3,9 @@
 </template>
 
 <script>
+  import mixin from '../mixins/index';
   export default {
+    mixins: [mixin],
     props: {
       arrange: Object
     },
@@ -15,17 +17,6 @@
         if (isInverse) str += ' is-inverse';
         return str;
       },
-    },
-    methods: {
-      handleClick(e) {
-        e.stopPropagation();
-        e.preventDefault();
-        if (this.arrange.isCenter) {
-          this.$emit('inverse');
-        } else {
-          this.$emit('center');
-        }
-      }
     }
   }
 </script>
