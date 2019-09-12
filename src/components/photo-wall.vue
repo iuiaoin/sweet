@@ -184,15 +184,10 @@
   @font-face {
     font-family: "icons-turn-arrow";
     src: url("../../public/assets/icons/turn-arrow.eot");
-    /* IE9 */
     src: url("../../public/assets/icons/turn-arrow.eot") format("embedded-opentype"),
-      /* IE6-IE8 */
       url("../../public/assets/icons/turn-arrow.woff") format("woff"),
-      /* chrome, firefox */
       url("../../public/assets/icons/turn-arrow.ttf") format("truetype"),
-      /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
       url("../../public/assets/icons/turn-arrow.svg") format("svg");
-    /* iOS 4.1- */
   }
 
   /* Base Application Styles */
