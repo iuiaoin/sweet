@@ -1,6 +1,6 @@
 <template>
   <figure class="img-figure" :class="isInverse" :style="styleObj" @click="handleClick">
-    <img :src="data.imgURL" :alt="data.title">
+    <div class="img-background" :style="{backgroundImage: `url(${data.imgURL})`}"></div>
     <figcaption>
       <h2 class="img-title">{{ data.title }}</h2>
         <div class="img-back" @click="handleClick">
@@ -13,7 +13,7 @@
 <script>
   import mixin from '../mixins/index';
   export default {
-    mixins: [ mixin ],
+    mixins: [mixin],
     props: {
       arrange: Object,
       data: Object
@@ -35,7 +35,7 @@
             obj[value] = 'rotate(' + rotate + 'deg)';
           });
         }
-        if(isCenter) obj.zIndex = 11;
+        if (isCenter) obj.zIndex = 11;
         return obj;
       }
     }
@@ -60,6 +60,14 @@
 
     &.is-inverse {
       transform: translate(320px) rotateY(180deg);
+    }
+
+    .img-background {
+      width: 240px;
+      height: 240px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover
     }
   }
 
