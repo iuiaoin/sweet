@@ -36,7 +36,7 @@
         imgFigures: [],
         controllerUnits: [],
         imgData: data.map(img => {
-          img.imgURL = require('../assets/imgs/' + img.fileName);
+          img.imgURL = require('../../public/assets/imgs/' + img.fileName);
           return img;
         }),
         perspective: ''
@@ -183,15 +183,15 @@
 <style lang="scss">
   @font-face {
     font-family: "icons-turn-arrow";
-    src: url("../assets/icons/turn-arrow.eot");
+    src: url("../../public/assets/icons/turn-arrow.eot");
     /* IE9 */
-    src: url("../assets/icons/turn-arrow.eot") format("embedded-opentype"),
+    src: url("../../public/assets/icons/turn-arrow.eot") format("embedded-opentype"),
       /* IE6-IE8 */
-      url("../assets/icons/turn-arrow.woff") format("woff"),
+      url("../../public/assets/icons/turn-arrow.woff") format("woff"),
       /* chrome, firefox */
-      url("../assets/icons/turn-arrow.ttf") format("truetype"),
+      url("../../public/assets/icons/turn-arrow.ttf") format("truetype"),
       /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-      url("../assets/icons/turn-arrow.svg") format("svg");
+      url("../../public/assets/icons/turn-arrow.svg") format("svg");
     /* iOS 4.1- */
   }
 
