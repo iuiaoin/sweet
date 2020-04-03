@@ -1,6 +1,6 @@
 <template>
   <figure class="img-figure" :class="isInverse" :style="styleObj" @click="handleClick">
-    <img :src="data.imgURL" :alt="data.title">
+    <div class="img" :style="{backgroundImage: `url(${data.imgURL})`}"></div>
     <figcaption>
       <h2 class="img-title">{{ data.title }}</h2>
         <div class="img-back" @click="handleClick">
@@ -60,6 +60,14 @@
 
     &.is-inverse {
       transform: translate(320px) rotateY(180deg);
+    }
+
+    .img {
+      width: 240px;
+      height: 240px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
     }
   }
 
